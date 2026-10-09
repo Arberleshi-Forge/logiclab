@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Tutor AI" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="fw-bold mb-2">{% translate "Tutor AI" %}</h1>
+        <p class="text-secondary mb-0">{% translate "Chatbot lokal me Ollama për logjikë dixhitale, matematikë diskrete, analizë algoritmesh dhe imazhe qarqesh. Përgjigjet ndjekin gjuhën e zgjedhur." %}</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="professional-card bg-white p-4">
+                <div class="chat-window mb-3">
+                    <div class="chat-message ai-message">
+                        {% translate "Përshëndetje. Mund të më pyesësh për truth tables, Boolean simplification, logic circuits, Big O, sorting, recursion ose të ngarkosh një imazh qarku për analizë. Tutor AI përgjigjet në gjuhën e zgjedhur." %}
+                    </div>
+
+                    {% if question %}
+                    <div class="chat-message user-message">{{ question }}</div>
+                    {% endif %}
+
+                    {% if uploaded_image_url %}
+                    <div class="chat-message user-message">
+                        <div class="small text-secondary mb-2">{% translate "Imazh i ngarkuar për analizë" %}</div>
+                        <img src="{{ uploaded_image_url }}" class="chat-image-preview" alt="{% translate "Imazh qarku" %}">
+                    </div>
+                    {% endif %}
+
+                    {% if answer %}
+                    <div class="chat-message ai-message">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <span class="badge {% if used_ollama %}text-bg-success{% else %}text-bg-warning{% endif %}">
+                                {% if used_ollama %}Ollama AI{% else %}{% translate "Fallback demo" %}{% endif %}
+                            </span>
+                        </div>
+                        {{ answer|linebreaks }}
+                    </div>
+                    {% endif %}
+                </div>
+
+                <form method="post" enctype="multipart/form-data" class="chat-form">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        {{ form.question.label_tag }}
+                        {{ form.question }}
+                    </div>
+                    <div class="row g-3 align-items-end">
+                        <div class="col-md-8">
+                            {{ form.image.label_tag }}
+                            {{ form.image }}
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-info w-100" type="submit">
+                                <i class="bi bi-send me-1"></i> {% translate "Dërgo" %}
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="professional-card bg-white p-4 mb-4">
+                <h5 class="fw-bold">{% translate "Si përdoret" %}</h5>
+                <ul class="text-secondary mb-0">
+                    <li>{% translate "Shkruaj pyetje teorike për logjikën Booleane ose algoritmet." %}</li>
+                    <li>{% translate "Vendos pseudokod dhe kërko analizë kompleksiteti." %}</li>
+                    <li>{% translate "Ngarko imazh qarku dhe kërko analizë." %}</li>
+                    <li>{% translate "Përdor modelin lokal" %} <code>granite3.2-vision:2b</code> {% translate "për përgjigje në anglisht me më pak resurse." %}</li>
+                </ul>
+            </div>
+            <div class="professional-card bg-white p-4">
+                <h5 class="fw-bold">{% translate "Shembuj pyetjesh" %}</h5>
+                <ul class="text-secondary mb-0">
+                    <li>{% translate "Analizo këtë qark dhe gjej funksionin Boolean." %}</li>
+                    <li>{% translate "Gjej kompleksitetin e dy cikleve të folezuara." %}</li>
+                    <li>{% translate "Krahaso Quick Sort me Merge Sort." %}</li>
+                    <li>{% translate "Shpjego rekursionin te faktoriali." %}</li>
+                    <li>{% translate "Pse tabela e së vërtetës ka O(2^n)?" %}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

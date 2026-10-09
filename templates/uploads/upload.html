@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Upload Imazhi" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="fw-bold mb-2">{% translate "Upload Imazhi" %}</h1>
+        <p class="text-secondary mb-0">{% translate "Ngarko një imazh qarku për analizë bazë." %}</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="professional-card bg-white p-4">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">{{ form.title.label_tag }}{{ form.title }}</div>
+            <div class="mb-3">{{ form.image.label_tag }}{{ form.image }}</div>
+            <button class="btn btn-info" type="submit"><i class="bi bi-upload me-1"></i> {% translate "Ngarko" %}</button>
+        </form>
+        {% if uploaded_image %}
+        <hr>
+        <h5 class="fw-bold">{{ uploaded_image.title }}</h5>
+        <img class="chat-image-preview mb-3" src="{{ uploaded_image.image.url }}" alt="{{ uploaded_image.title }}">
+        <p class="text-secondary mb-0">{{ uploaded_image.ai_explanation }}</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

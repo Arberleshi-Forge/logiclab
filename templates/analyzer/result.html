@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load analyzer_filters %}
+{% block title %}{% translate "Rezultati" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="fw-bold mb-2">{% translate "Rezultati i Analizës" %}</h1>
+        <p class="text-secondary mb-0">{% translate "Analizë e plotë e shprehjes Booleane dhe qarkut përkatës." %}</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="result-card bg-white p-4 h-100">
+                <h5 class="fw-bold">{% translate "Përmbledhje" %}</h5>
+                <p><span class="text-secondary">{% translate "Origjinale:" %}</span><br><code>{{ analysis.original_expression }}</code></p>
+                <p><span class="text-secondary">{% translate "Normalizuar:" %}</span><br><code>{{ analysis.normalized_expression }}</code></p>
+                <p><span class="text-secondary">{% translate "Variablat:" %}</span> {{ analysis.variables|join:", " }}</p>
+                <p><span class="text-secondary">{% translate "Tipi:" %}</span> <span class="badge text-bg-info">{{ analysis.expression_type }}</span></p>
+                <p class="mb-0"><span class="text-secondary">{% translate "Shpjegim:" %}</span><br>{{ analysis.explanation }}</p>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="result-card bg-white p-4">
+                <h5 class="fw-bold">{% translate "Tabela e së Vërtetës" %}</h5>
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                        <thead>
+                        <tr>
+                            {% for variable in analysis.variables %}<th>{{ variable }}</th>{% endfor %}
+                            <th>F</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for row in analysis.truth_table %}
+                        <tr>
+                            {% for variable in analysis.variables %}<td>{{ row.values|get_item:variable }}</td>{% endfor %}
+                            <td class="fw-bold">{{ row.result }}</td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mt-1">
+        <div class="col-md-4"><div class="result-card bg-white p-4 h-100"><h5>{% translate "Thjeshtimi" %}</h5><code>{{ analysis.simplified_expression }}</code></div></div>
+        <div class="col-md-4"><div class="result-card bg-white p-4 h-100"><h5>{% translate "Forma SOP" %}</h5><code>{{ analysis.sop }}</code></div></div>
+        <div class="col-md-4"><div class="result-card bg-white p-4 h-100"><h5>{% translate "Forma POS" %}</h5><code>{{ analysis.pos }}</code></div></div>
+    </div>
+
+    <div class="row g-4 mt-1">
+        <div class="col-lg-4">
+            <div class="result-card bg-white p-4 h-100">
+                <h5 class="fw-bold">{% translate "Numri i Portave" %}</h5>
+                <ul class="list-group list-group-flush">
+                    {% for gate, count in analysis.gate_count.items %}
+                    <li class="list-group-item d-flex justify-content-between px-0"><span>{{ gate }}</span><strong>{{ count }}</strong></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="result-card bg-white p-4 h-100">
+                <h5 class="fw-bold">{% translate "Hapat e Qarkut Logjik" %}</h5>
+                <ol class="mb-0">
+                    {% for step in analysis.circuit_steps %}<li>{{ step }}</li>{% endfor %}
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-card bg-white p-4 mt-4">
+        <h5 class="fw-bold">{% translate "Analizë Algoritmike" %}</h5>
+        <div class="row g-3">
+            <div class="col-md-3"><span class="text-secondary">{% translate "Numri i variablave" %}</span><br><strong>{{ analysis.algorithm_analysis.variable_count }}</strong></div>
+            <div class="col-md-3"><span class="text-secondary">{% translate "Numri i kombinimeve" %}</span><br><strong>{{ analysis.algorithm_analysis.combination_count }}</strong></div>
+            <div class="col-md-3"><span class="text-secondary">{% translate "Kompleksiteti kohor" %}</span><br><span class="badge text-bg-info">{{ analysis.algorithm_analysis.time_complexity }}</span></div>
+            <div class="col-md-3"><span class="text-secondary">{% translate "Kompleksiteti hapësinor" %}</span><br><span class="badge text-bg-warning">{{ analysis.algorithm_analysis.space_complexity }}</span></div>
+        </div>
+        <p class="text-secondary mt-3 mb-0">{{ analysis.algorithm_analysis.explanation }}</p>
+    </div>
+
+    <div class="result-card bg-white p-4 mt-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="feature-icon bg-primary-subtle text-primary"><i class="bi bi-diagram-3"></i></div>
+            <div>
+                <h5 class="fw-bold mb-1">{% translate "Struktura e Qarkut" %}</h5>
+                <p class="text-secondary mb-0">{% translate "Paraqitje konceptuale e mënyrës si shprehja ndërtohet nga hyrjet deri te dalja finale F." %}</p>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-lg-4">
+                <div class="circuit-structure-box h-100">
+                    <h6 class="fw-bold">{% translate "Hyrjet" %}</h6>
+                    <div class="d-flex flex-wrap gap-2">
+                        {% for variable in analysis.variables %}
+                        <span class="badge text-bg-light border">{{ variable }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="circuit-structure-box h-100">
+                    <h6 class="fw-bold">{% translate "Portat e përdorura" %}</h6>
+                    <ul class="list-unstyled mb-0">
+                        {% for gate, count in analysis.gate_count.items %}
+                        {% if count %}
+                        <li class="d-flex justify-content-between"><span>{{ gate }}</span><strong>{{ count }}</strong></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="circuit-structure-box h-100">
+                    <h6 class="fw-bold">{% translate "Dalja" %}</h6>
+                    <p class="mb-1"><span class="badge text-bg-success">F</span></p>
+                    <p class="text-secondary small mb-0">{% translate "Dalja F merret pas kombinimit të portave sipas shprehjes së normalizuar." %}</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <h6 class="fw-bold">{% translate "Rrjedha logjike" %}</h6>
+        <ol class="mb-0">
+            {% for step in analysis.circuit_steps %}
+            <li>{{ step }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+</section>
+{% endblock %}

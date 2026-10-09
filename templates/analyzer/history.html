@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Historiku" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header"><div class="container"><h1 class="fw-bold mb-2">{% translate "Historiku i Analizave" %}</h1><p class="text-secondary mb-0">{% translate "Analizat e ruajtura nga përdorimi i analizuesit Boolean." %}</p></div></section>
+<section class="container py-5">
+    <div class="professional-card bg-white p-4">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead><tr><th>{% translate "Shprehja origjinale" %}</th><th>{% translate "Shprehja e thjeshtuar" %}</th><th>{% translate "Tipi" %}</th><th>{% translate "Portat" %}</th><th>{% translate "Data" %}</th></tr></thead>
+                <tbody>
+                {% for item in expressions %}
+                <tr>
+                    <td><code>{{ item.original_expression }}</code></td>
+                    <td><code>{{ item.simplified_expression }}</code></td>
+                    <td>{{ item.expression_type }}</td>
+                    <td>{{ item.gate_count }}</td>
+                    <td>{{ item.created_at|date:"d.m.Y H:i" }}</td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="5" class="text-center text-secondary py-4">{% translate "Ende nuk ka analiza të ruajtura." %}</td></tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock %}

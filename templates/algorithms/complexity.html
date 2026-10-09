@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Analiza e Kompleksitetit" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="fw-bold mb-2">{% translate "Analiza e Kompleksitetit" %}</h1>
+        <p class="text-secondary mb-0">{% translate "Analizo pseudokode të njohura me Big O, Big Θ dhe Big Ω." %}</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="professional-card bg-white p-4">
+                <form method="post">
+                    {% csrf_token %}
+                    <label class="form-label fw-semibold" for="case_key">{% translate "Zgjedh algoritmin për analizë" %}</label>
+                    <select class="form-select mb-3" id="case_key" name="case_key">
+                        {% for key, option in cases.items %}
+                        <option value="{{ key }}" {% if key == selected_case %}selected{% endif %}>{{ option.title }}</option>
+                        {% endfor %}
+                    </select>
+                    <button class="btn btn-info w-100" type="submit"><i class="bi bi-search me-1"></i> {% translate "Analizo" %}</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="professional-card bg-white p-4">
+                <h4 class="fw-bold">{{ case.title }}</h4>
+                <pre class="pseudocode-box mt-3">{{ case.pseudocode }}</pre>
+                <p class="text-secondary">{{ case.explanation }}</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge complexity-badge text-bg-info">Big O: {{ case.big_o }}</span>
+                    <span class="badge complexity-badge text-bg-success">Big Θ: {{ case.big_theta }}</span>
+                    <span class="badge complexity-badge text-bg-warning">Big Ω: {{ case.big_omega }}</span>
+                </div>
+                <div class="alert alert-light border mb-0"><strong>{% translate "Shënim efikasiteti:" %}</strong> {{ case.efficiency_note }}</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

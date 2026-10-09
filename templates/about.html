@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Rreth Projektit" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="fw-bold mb-2">{% translate "Rreth LogicLab" %}</h1>
+        <p class="text-secondary mb-0">{% translate "Një platformë akademike që bashkon pesë lëndë universitare në një mjedis praktik analize, simulimi dhe interpretimi." %}</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="professional-card bg-white p-4 mb-4">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+                <span class="badge text-bg-info mb-3">{% translate "Projekt ndërdisiplinor" %}</span>
+                <h2 class="fw-bold">{% translate "Qëllimi akademik i projektit" %}</h2>
+                <p class="text-secondary mb-0">
+                    {% translate "LogicLab nuk është vetëm një analizues shprehjesh Booleane. Projekti demonstron se si konceptet teorike nga matematika, logjika, algoritmet, programimi web dhe inteligjenca artificiale mund të lidhen në një aplikacion real me strukturë modulare, ndërfaqe të qartë dhe funksionalitet të testueshëm." %}
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <div class="pseudocode-box mb-0">Boolean Logic
+Truth Table
+Big O
+Django MVC
+AI Tutor</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+            <div class="professional-card subject-card bg-white p-4 h-100">
+                <div class="feature-icon bg-info-subtle text-info mb-3"><i class="bi bi-braces"></i></div>
+                <h4>{% translate "Matematika Diskrete" %}</h4>
+                <p class="text-secondary">{% translate "Kjo lëndë është baza teorike e projektit. Ajo shfaqet përmes algjebrës Booleane, tabelave të së vërtetës, tautologjive, kontradiktave, kontingjencave dhe formave kanonike SOP/POS." %}</p>
+                <div class="small text-secondary"><strong>{% translate "Në LogicLab:" %}</strong> {% translate "përdoruesi shkruan një shprehje dhe sistemi e kthen në strukturë të analizueshme matematikisht." %}</div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+            <div class="professional-card subject-card bg-white p-4 h-100">
+                <div class="feature-icon bg-primary-subtle text-primary mb-3"><i class="bi bi-diagram-3"></i></div>
+                <h4>{% translate "Logjika Digjitale" %}</h4>
+                <p class="text-secondary">{% translate "Konceptet Booleane interpretohen si qarqe kombinacionale me porta NOT, AND, OR dhe XOR. Kjo e kthen formulën teorike në model teknik të lexueshëm për dizajn digjital." %}</p>
+                <div class="small text-secondary"><strong>{% translate "Në LogicLab:" %}</strong> {% translate "shprehja shoqërohet me numërim portash, hapa qarku dhe burim DOT për paraqitje grafike." %}</div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+            <div class="professional-card subject-card bg-white p-4 h-100">
+                <div class="feature-icon bg-success-subtle text-success mb-3"><i class="bi bi-bar-chart-steps"></i></div>
+                <h4>{% translate "Algoritme dhe Programim i Avancuar" %}</h4>
+                <p class="text-secondary">{% translate "Ky modul shton analizë të kompleksitetit, algoritme renditjeje, rekursion, iteracion, Divide and Conquer, Greedy dhe Dynamic Programming." %}</p>
+                <div class="small text-secondary"><strong>{% translate "Në LogicLab:" %}</strong> {% translate "tabela e së vërtetës lidhet me kompleksitetin O(2^n), ndërsa Algorithm Lab shpjegon Big O, Big Θ dhe Big Ω." %}</div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+            <div class="professional-card subject-card bg-white p-4 h-100">
+                <div class="feature-icon bg-warning-subtle text-warning mb-3"><i class="bi bi-window-stack"></i></div>
+                <h4>{% translate "Programim në Web me Django" %}</h4>
+                <p class="text-secondary">{% translate "Projekti përdor arkitekturë Django me ndarje të qartë midis views, templates, URL-ve, engine files dhe modeleve të databazës." %}</p>
+                <div class="small text-secondary"><strong>{% translate "Në LogicLab:" %}</strong> {% translate "faqet janë ndërtuar me Bootstrap, routing të organizuar, formularë Django dhe ruajtje të historikut në SQLite." %}</div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+            <div class="professional-card subject-card bg-white p-4 h-100">
+                <div class="feature-icon bg-danger-subtle text-danger mb-3"><i class="bi bi-robot"></i></div>
+                <h4>{% translate "Inteligjencë Artificiale e Aplikuar" %}</h4>
+                <p class="text-secondary">{% translate "Tutor AI përdor model lokal me Ollama për të shpjeguar koncepte, për të ndihmuar në interpretimin e pyetjeve dhe për të analizuar imazhe qarqesh logjike." %}</p>
+                <div class="small text-secondary"><strong>{% translate "Në LogicLab:" %}</strong> {% translate "modeli është i kufizuar në temat e projektit dhe punon lokalisht për të ulur varësinë nga shërbime të jashtme." %}</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="professional-card bg-white p-4 mt-4">
+        <h3 class="fw-bold mb-3">{% translate "Si ndërthuren lëndët në një rrjedhë të vetme" %}</h3>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-6">
+                <div class="integration-step h-100">
+                    <span class="badge text-bg-info mb-2">1</span>
+                    <h6 class="fw-bold">{% translate "Modelimi" %}</h6>
+                    <p class="text-secondary mb-0">{% translate "Matematika Diskrete e përkthen problemin në shprehje Booleane." %}</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="integration-step h-100">
+                    <span class="badge text-bg-primary mb-2">2</span>
+                    <h6 class="fw-bold">{% translate "Implementimi Digjital" %}</h6>
+                    <p class="text-secondary mb-0">{% translate "Logjika Digjitale e kthen shprehjen në porta dhe qark kombinacional." %}</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="integration-step h-100">
+                    <span class="badge text-bg-success mb-2">3</span>
+                    <h6 class="fw-bold">{% translate "Analiza Algoritmike" %}</h6>
+                    <p class="text-secondary mb-0">{% translate "Algoritmet shpjegojnë koston kohore dhe hapësinore të gjenerimit të rezultateve." %}</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="integration-step h-100">
+                    <span class="badge text-bg-danger mb-2">4</span>
+                    <h6 class="fw-bold">{% translate "Ndihma Inteligjente" %}</h6>
+                    <p class="text-secondary mb-0">{% translate "AI ndihmon në shpjegim, interpretim imazhesh dhe orientim teorik." %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="professional-card bg-white p-4 mt-4">
+        <h3 class="fw-bold mb-3">{% translate "Vlera profesionale e projektit" %}</h3>
+        <ul class="text-secondary mb-0">
+            <li>{% translate "Demonstron lidhjen midis teorisë universitare dhe një aplikacioni funksional web." %}</li>
+            <li>{% translate "Përdor arkitekturë modulare ku logjika e biznesit ndahet nga ndërfaqja dhe routing." %}</li>
+            <li>{% translate "Ofron analizë algoritmike të qartë për kompleksitetin e proceseve të LogicLab." %}</li>
+            <li>{% translate "Përfshin AI lokale për tutorim dhe analizë imazhesh, pa kërkuar API key të jashtëm." %}</li>
+            <li>{% translate "Është i zgjerueshëm për module të reja, renderim grafik, eksportim raportesh dhe llogari përdoruesish." %}</li>
+        </ul>
+    </div>
+
+    <div class="professional-card bg-white p-4 mt-4">
+        <div class="d-flex align-items-start gap-3">
+            <div class="feature-icon bg-danger-subtle text-danger"><i class="bi bi-stars"></i></div>
+            <div>
+                <h3 class="fw-bold mb-2">{% translate "Roli i Inteligjencës Artificiale në zhvillim" %}</h3>
+                <p class="text-secondary mb-0">
+                    {% translate "Ky web është ndërtuar dhe përmirësuar me ndihmën e inteligjencës artificiale si asistencë zhvillimi. AI është përdorur për strukturimin e moduleve, organizimin e kodit, përmirësimin e ndërfaqes, formulimin e shpjegimeve akademike dhe optimizimin e integrimit me Tutor AI. Vendimmarrja, përzgjedhja e funksionaliteteve dhe përshtatja me qëllimin e projektit mbeten pjesë e punës zhvilluese dhe akademike të projektit." %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

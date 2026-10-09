@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Visualizer i Renditjes" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="fw-bold mb-2">{% translate "Visualizer i Renditjes" %}</h1>
+        <p class="text-secondary mb-0">{% translate "Eksperimento me algoritme renditjeje dhe shiko hapat, krahasimet dhe kompleksitetin." %}</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="professional-card bg-white p-4 mb-4">
+        <form method="post" class="row g-3 align-items-end">
+            {% csrf_token %}
+            <div class="col-lg-6">
+                <label class="form-label fw-semibold" for="numbers">{% translate "Lista e numrave" %}</label>
+                <input class="form-control" id="numbers" name="numbers" value="{{ input_text }}" placeholder="8, 4, 7, 3, 2, 6">
+            </div>
+            <div class="col-lg-3">
+                <label class="form-label fw-semibold" for="algorithm">{% translate "Algoritmi" %}</label>
+                <select class="form-select" id="algorithm" name="algorithm">
+                    {% for key, label in algorithms.items %}
+                    <option value="{{ key }}" {% if key == selected_algorithm %}selected{% endif %}>{{ label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <button class="btn btn-info w-100" type="submit"><i class="bi bi-play-fill me-1"></i> {% translate "Ekzekuto" %}</button>
+            </div>
+        </form>
+        {% if error %}<div class="alert alert-warning mt-3 mb-0">{{ error }}</div>{% endif %}
+    </div>
+
+    {% if result %}
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="professional-card bg-white p-4 h-100">
+                <h5 class="fw-bold">{% translate "Rezultati" %}</h5>
+                <p><span class="text-secondary">{% translate "Lista fillestare:" %}</span><br><code>{{ result.original_list }}</code></p>
+                <p><span class="text-secondary">{% translate "Lista finale:" %}</span><br><code>{{ result.sorted_list }}</code></p>
+                <div class="row g-2">
+                    <div class="col-4"><span class="badge text-bg-info w-100">{% translate "Krahasime" %}<br>{{ result.comparisons }}</span></div>
+                    <div class="col-4"><span class="badge text-bg-success w-100">{% translate "Swaps" %}<br>{{ result.swaps }}</span></div>
+                    <div class="col-4"><span class="badge text-bg-warning w-100">{% translate "Shifts" %}<br>{{ result.shifts }}</span></div>
+                </div>
+                <hr>
+                <p class="mb-1"><strong>{% translate "Best:" %}</strong> {{ result.best_case }}</p>
+                <p class="mb-1"><strong>{% translate "Average:" %}</strong> {{ result.average_case }}</p>
+                <p class="mb-3"><strong>{% translate "Worst:" %}</strong> {{ result.worst_case }}</p>
+                <p class="text-secondary mb-0">{{ result.explanation }}</p>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="professional-card bg-white p-4 h-100">
+                <h5 class="fw-bold">{% translate "Hapat e Renditjes" %}</h5>
+                <div class="sorting-steps">
+                    {% for step in result.steps %}
+                    <div class="sorting-step border rounded p-3 mb-2">
+                        <div class="fw-semibold">{% translate "Hapi" %} {{ step.step }}</div>
+                        <div class="text-secondary">{{ step.description }}</div>
+                        <code>{{ step.array }}</code>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="professional-card bg-white p-4 mt-4">
+        <h5 class="fw-bold">{% translate "Tabelë Krahasimi e Algoritmeve" %}</h5>
+        <div class="table-responsive">
+            <table class="table table-striped align-middle mb-0">
+                <thead><tr><th>{% translate "Algoritmi" %}</th><th>{% translate "Best" %}</th><th>{% translate "Average" %}</th><th>{% translate "Worst" %}</th><th>{% translate "Përdorimi" %}</th></tr></thead>
+                <tbody>
+                {% for name, best, average, worst, usage in comparison_rows %}
+                <tr><td>{{ name }}</td><td>{{ best }}</td><td>{{ average }}</td><td>{{ worst }}</td><td>{{ usage }}</td></tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock %}

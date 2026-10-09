@@ -1,0 +1,957 @@
+msgid ""
+msgstr "Project-Id-Version: LogicLab\nPO-Revision-Date: 2026-10-09 15:00+0200\nLast-Translator: LogicLab contributors\nLanguage-Team: sq\nLanguage: sq\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid " dhe "
+msgstr " dhe "
+
+msgid " dhe kërkojmë pozicionin e duhur."
+msgstr " dhe kërkojmë pozicionin e duhur."
+
+msgid " me elementin në pozicionin "
+msgstr " me elementin në pozicionin "
+
+msgid " një pozicion djathtas."
+msgstr " një pozicion djathtas."
+
+msgid " në anën e majtë të pivotit."
+msgstr " në anën e majtë të pivotit."
+
+msgid " në pozicionin e duhur."
+msgstr " në pozicionin e duhur."
+
+msgid " për segmentin "
+msgstr " për segmentin "
+
+msgid " vendoset në pozicionin final "
+msgstr " vendoset në pozicionin final "
+
+msgid " është tashmë i saktë."
+msgstr " është tashmë i saktë."
+
+msgid ", pastaj bashkohet me rend."
+msgstr ", pastaj bashkohet me rend."
+
+msgid ", rezultati bëhet "
+msgstr ", rezultati bëhet "
+
+msgid ", sepse për n variabla ekzistojnë"
+msgstr ", sepse për n variabla ekzistojnë"
+
+msgid ": shumëzojmë rezultatin me "
+msgstr ": shumëzojmë rezultatin me "
+
+msgid "A combinational circuit is built by connecting NOT, AND, OR, and XOR gates according to the Boolean expression structure."
+msgstr "Qarku kombinacional ndërtohet duke lidhur porta NOT, AND, OR dhe XOR sipas strukturës së shprehjes Booleane."
+
+msgid "A greedy algorithm makes the best local choice at each step. It works when local optimal choices lead to a globally optimal solution."
+msgstr "Një algoritëm greedy bën zgjedhjen më të mirë lokale në çdo hap. Funksionon kur zgjedhjet optimale lokale çojnë në një zgjidhje optimale globale."
+
+msgid "A truth table lists every input combination and the corresponding output. For n variables, it contains 2^n rows."
+msgstr "Tabela e së vërtetës rendit çdo kombinim hyrjesh dhe daljen përkatëse. Për n variabla ka 2^n rreshta."
+
+msgid "AI ndihmon në shpjegim, interpretim imazhesh dhe orientim teorik."
+msgstr "AI ndihmon në shpjegim, interpretim imazhesh dhe orientim teorik."
+
+msgid "Algoritme dhe Programim i Avancuar"
+msgstr "Algoritme dhe Programim i Avancuar"
+
+msgid "Algoritme për renditjen e elementeve."
+msgstr "Algoritme për renditjen e elementeve."
+
+msgid "Algoritmet shpjegojnë koston kohore dhe hapësinore të gjenerimit të rezultateve."
+msgstr "Algoritmet shpjegojnë koston kohore dhe hapësinore të gjenerimit të rezultateve."
+
+msgid "Algoritmi"
+msgstr "Algoritmi"
+
+msgid "Analiza Algoritmike"
+msgstr "Analiza Algoritmike"
+
+msgid "Analiza e Kompleksitetit"
+msgstr "Analiza e Kompleksitetit"
+
+msgid "Analizat e ruajtura nga përdorimi i analizuesit Boolean."
+msgstr "Analizat e ruajtura nga përdorimi i analizuesit Boolean."
+
+msgid "Analizo"
+msgstr "Analizo"
+
+msgid "Analizo këtë qark dhe gjej funksionin Boolean."
+msgstr "Analizo këtë qark dhe gjej funksionin Boolean."
+
+msgid "Analizo pseudokode të njohura me Big O, Big Θ dhe Big Ω."
+msgstr "Analizo pseudokode të njohura me Big O, Big Θ dhe Big Ω."
+
+msgid "Analizo shprehjen"
+msgstr "Analizo shprehjen"
+
+msgid "Analizon pyetje, koncepte Boolean dhe imazhe qarqesh me Ollama."
+msgstr "Analizon pyetje, koncepte Boolean dhe imazhe qarqesh me Ollama."
+
+msgid "Analizon sintaksën, variablat dhe strukturën logjike."
+msgstr "Analizon sintaksën, variablat dhe strukturën logjike."
+
+msgid "Analizues Boolean"
+msgstr "Analizues Boolean"
+
+msgid "Analizues i Shprehjeve Booleane"
+msgstr "Analizues i Shprehjeve Booleane"
+
+msgid "Analizuesi"
+msgstr "Analizuesi"
+
+msgid "Analizuesi i Shprehjeve Booleane"
+msgstr "Analizuesi i Shprehjeve Booleane"
+
+msgid "Analizë Algoritmike"
+msgstr "Analizë Algoritmike"
+
+msgid "Analizë Imazhi në Chat"
+msgstr "Analizë Imazhi në Chat"
+
+msgid "Analizë e plotë e shprehjes Booleane dhe qarkut përkatës."
+msgstr "Analizë e plotë e shprehjes Booleane dhe qarkut përkatës."
+
+msgid "Average"
+msgstr "Mesatar"
+
+msgid "Average:"
+msgstr "Mesatar:"
+
+msgid "Bashkimi final jep listën e renditur."
+msgstr "Bashkimi final jep listën e renditur."
+
+msgid "Best"
+msgstr "Më i miri"
+
+msgid "Best:"
+msgstr "Më i miri:"
+
+msgid "Big O jep kufirin e sipërm, Big Θ jep rritjen e saktë asimptotike dhe Big Ω jep kufirin e poshtëm."
+msgstr "Big O jep kufirin e sipërm, Big Θ jep rritjen e saktë asimptotike dhe Big Ω jep kufirin e poshtëm."
+
+msgid "Boolean algebra works with the values 0 and 1 and is a foundation of digital logic."
+msgstr "Algjebra Booleane punon me vlerat 0 dhe 1 dhe është bazë e logjikës digjitale."
+
+msgid "Boolean simplification reduces an expression without changing its logical function, often reducing the number of gates."
+msgstr "Thjeshtimi Boolean zvogëlon një shprehje pa ndryshuar funksionin logjik dhe shpesh ul numrin e portave."
+
+msgid "Chatbot lokal me Ollama për logjikë dixhitale, matematikë diskrete, analizë algoritmesh dhe imazhe qarqesh. Përgjigjet ndjekin gjuhën e zgjedhur."
+msgstr "Chatbot lokal me Ollama për logjikë dixhitale, matematikë diskrete, analizë algoritmesh dhe imazhe qarqesh. Përgjigjet ndjekin gjuhën e zgjedhur."
+
+msgid "Cikle të dyfishta + cikël linear"
+msgstr "Cikle të dyfishta + cikël linear"
+
+msgid "Cikle të folezuara trekëndore"
+msgstr "Cikle të folezuara trekëndore"
+
+msgid "Cikli linear nuk e ndryshon klasën e kompleksitetit kur ekziston një pjesë kuadratike."
+msgstr "Cikli linear nuk e ndryshon klasën e kompleksitetit kur ekziston një pjesë kuadratike."
+
+msgid "Dalja"
+msgstr "Dalja"
+
+msgid "Dalja F merret pas kombinimit të portave sipas shprehjes së normalizuar."
+msgstr "Dalja F merret pas kombinimit të portave sipas shprehjes së normalizuar."
+
+msgid "Data"
+msgstr "Data"
+
+msgid "De Morgan's laws transform NOT over AND into OR of negated inputs, and NOT over OR into AND of negated inputs."
+msgstr "Ligjet e De Morgan shndërrojnë mohimin e AND në OR të hyrjeve të mohuara dhe mohimin e OR në AND të hyrjeve të mohuara."
+
+msgid "Demonstron lidhjen midis teorisë universitare dhe një aplikacioni funksional web."
+msgstr "Demonstron lidhjen midis teorisë universitare dhe një aplikacioni funksional web."
+
+msgid "Dynamic Programming stores subproblem results to avoid repeated work. Memoization is the top-down version of this idea."
+msgstr "Programimi dinamik ruan rezultatet e nënproblemeve për të shmangur përsëritjen. Memoization është versioni nga lart-poshtë i kësaj ideje."
+
+msgid "Dërgo"
+msgstr "Dërgo"
+
+msgid "Eksperimento me algoritme renditjeje dhe shiko hapat, krahasimet dhe kompleksitetin."
+msgstr "Eksperimento me algoritme renditjeje dhe shiko hapat, krahasimet dhe kompleksitetin."
+
+msgid "Eksploro kompleksitetin Big O, algoritmet e renditjes, rekursionin, Divide and Conquer, Greedy dhe Dynamic Programming, si dhe lidhjen e tyre me analizën e logjikës Booleane."
+msgstr "Eksploro kompleksitetin Big O, algoritmet e renditjes, rekursionin, Divide and Conquer, Greedy dhe Dynamic Programming, si dhe lidhjen e tyre me analizën e logjikës Booleane."
+
+msgid "Ekzekuto"
+msgstr "Ekzekuto"
+
+msgid "Ende nuk ka analiza të ruajtura."
+msgstr "Ende nuk ka analiza të ruajtura."
+
+msgid "Faktoriali Iterativ"
+msgstr "Faktoriali Iterativ"
+
+msgid "Faktoriali Rekursiv"
+msgstr "Faktoriali Rekursiv"
+
+msgid "Fallback demo"
+msgstr "Përgjigje demonstrimi"
+
+msgid "Fibonacci me memoization shmang llogaritje të përsëritura."
+msgstr "Fibonacci me memoization shmang llogaritje të përsëritura."
+
+msgid "Fillo analizën"
+msgstr "Fillo analizën"
+
+msgid "Fillojmë kërkimin e minimumit për çdo pozicion."
+msgstr "Fillojmë kërkimin e minimumit për çdo pozicion."
+
+msgid "Fillojmë me listën fillestare."
+msgstr "Fillojmë me listën fillestare."
+
+msgid "For algorithm analysis, identify loops or recursion, find the dominant term, and express it with Big O, Big Θ, and Big Ω. For example, two nested loops usually give Θ(n^2)."
+msgstr "Për analizën algoritmike, identifiko ciklet ose rekursionin, gjej termin dominues dhe shprehe me Big O, Big Θ dhe Big Ω. Dy cikle të folezuara mbi n elemente zakonisht japin Θ(n^2)."
+
+msgid "Forma POS"
+msgstr "Forma POS"
+
+msgid "Forma SOP"
+msgstr "Forma SOP"
+
+msgid "Funksionalitetet Kryesore"
+msgstr "Funksionalitetet Kryesore"
+
+msgid "Gjej kompleksitetin e dy cikleve të folezuara."
+msgstr "Gjej kompleksitetin e dy cikleve të folezuara."
+
+msgid "Gjenerator i Qarqeve Logjike"
+msgstr "Gjenerator i Qarqeve Logjike"
+
+msgid "Gjenerator i Tabelës së Vërtetës"
+msgstr "Gjenerator i Tabelës së Vërtetës"
+
+msgid "Gjenerator qarqesh"
+msgstr "Gjenerator qarqesh"
+
+msgid "Gjenerimi i tabelës së së vërtetës ka kompleksitet"
+msgstr "Gjenerimi i tabelës së së vërtetës ka kompleksitet"
+
+msgid "Greedy funksionon kur zgjedhjet lokale çojnë në zgjidhje optimale globale."
+msgstr "Greedy funksionon kur zgjedhjet lokale çojnë në zgjidhje optimale globale."
+
+msgid "Hap Laboratorin"
+msgstr "Hap Laboratorin"
+
+msgid "Hapat e Qarkut Logjik"
+msgstr "Hapat e Qarkut Logjik"
+
+msgid "Hapat e Renditjes"
+msgstr "Hapat e Renditjes"
+
+msgid "Hapat e qarkut mund të ruhen si sekuencë nyjesh ku çdo hap lidhet me hapin pasues."
+msgstr "Hapat e qarkut mund të ruhen si sekuencë nyjesh ku çdo hap lidhet me hapin pasues."
+
+msgid "Hapi"
+msgstr "Hapi"
+
+msgid "Historiku"
+msgstr "Historiku"
+
+msgid "Historiku i Analizave"
+msgstr "Historiku i Analizave"
+
+msgid "Hyrje: "
+msgstr "Hyrje: "
+
+msgid "Hyrjet"
+msgstr "Hyrjet"
+
+msgid "I shpejtë në praktikë me ndarje të mira"
+msgstr "I shpejtë në praktikë me ndarje të mira"
+
+msgid "Imazh i ngarkuar për analizë"
+msgstr "Imazh i ngarkuar për analizë"
+
+msgid "Imazh qarku"
+msgstr "Imazh qarku"
+
+msgid "Imazhi i qarkut"
+msgstr "Imazhi i qarkut"
+
+msgid "Imazhi nuk mund të lexohet."
+msgstr "Imazhi nuk mund të lexohet."
+
+msgid "Imazhi u ruajt, por rruga lokale nuk u gjet për analizë automatike. Kontrollo konfigurimin e MEDIA_ROOT dhe provo përsëri."
+msgstr "Imazhi u ruajt, por rruga lokale nuk u gjet për analizë automatike. Kontrollo konfigurimin e MEDIA_ROOT dhe provo përsëri."
+
+msgid "Implementimi Digjital"
+msgstr "Implementimi Digjital"
+
+msgid "Insertion Sort është efikas për lista të vogla ose pothuajse të renditura."
+msgstr "Insertion Sort është efikas për lista të vogla ose pothuajse të renditura."
+
+msgid "Insertion, Selection, Quick dhe Merge Sort tregojnë strategji të ndryshme renditjeje."
+msgstr "Insertion, Selection, Quick dhe Merge Sort tregojnë strategji të ndryshme renditjeje."
+
+msgid "Inteligjencë Artificiale e Aplikuar"
+msgstr "Inteligjencë Artificiale e Aplikuar"
+
+msgid "Iterimi "
+msgstr "Iterimi "
+
+msgid "Kjo e lidh Dynamic Programming me vlerësimin e shprehjeve Booleane."
+msgstr "Kjo e lidh Dynamic Programming me vlerësimin e shprehjeve Booleane."
+
+msgid "Kjo lëndë është baza teorike e projektit. Ajo shfaqet përmes algjebrës Booleane, tabelave të së vërtetës, tautologjive, kontradiktave, kontingjencave dhe formave kanonike SOP/POS."
+msgstr "Kjo lëndë është baza teorike e projektit. Ajo shfaqet përmes algjebrës Booleane, tabelave të së vërtetës, tautologjive, kontradiktave, kontingjencave dhe formave kanonike SOP/POS."
+
+msgid "Kjo shprehje përfaqëson një qark kombinacional ku dalja F përcaktohet nga kombinimi i hyrjeve."
+msgstr "Kjo shprehje përfaqëson një qark kombinacional ku dalja F përcaktohet nga kombinimi i hyrjeve."
+
+msgid "Kjo shprehje përfaqëson një qark kombinacional. Nëse A është 1, dalja ndikohet nga B; nëse A është 0, dalja ndikohet nga C. Ky model i ngjan logjikës së një multiplekseri 2-me-1."
+msgstr "Kjo shprehje përfaqëson një qark kombinacional. Nëse A është 1, dalja ndikohet nga B; nëse A është 0, dalja ndikohet nga C. Ky model i ngjan logjikës së një multiplekseri 2-me-1."
+
+msgid "Kompleksitet:"
+msgstr "Kompleksitet:"
+
+msgid "Kompleksiteti hapësinor"
+msgstr "Kompleksiteti hapësinor"
+
+msgid "Kompleksiteti hapësinor:"
+msgstr "Kompleksiteti hapësinor:"
+
+msgid "Kompleksiteti kohor"
+msgstr "Kompleksiteti kohor"
+
+msgid "Kompleksiteti kohor:"
+msgstr "Kompleksiteti kohor:"
+
+msgid "Koncepte kryesore nga Algoritme dhe Programim i Avancuar, të lidhura me LogicLab."
+msgstr "Koncepte kryesore nga Algoritme dhe Programim i Avancuar, të lidhura me LogicLab."
+
+msgid "Konceptet Booleane interpretohen si qarqe kombinacionale me porta NOT, AND, OR dhe XOR. Kjo e kthen formulën teorike në model teknik të lexueshëm për dizajn digjital."
+msgstr "Konceptet Booleane interpretohen si qarqe kombinacionale me porta NOT, AND, OR dhe XOR. Kjo e kthen formulën teorike në model teknik të lexueshëm për dizajn digjital."
+
+msgid "Koncepti i përgjysmimit lidhet me vendimmarrjen binare 0/1 në pemë logjike."
+msgstr "Koncepti i përgjysmimit lidhet me vendimmarrjen binare 0/1 në pemë logjike."
+
+msgid "Kontingjencë"
+msgstr "Kontingjencë"
+
+msgid "Kontradiktë"
+msgstr "Kontradiktë"
+
+msgid "Krahasime"
+msgstr "Krahasime"
+
+msgid "Krahaso Quick Sort me Merge Sort."
+msgstr "Krahaso Quick Sort me Merge Sort."
+
+msgid "Krahaso faktorialin rekursiv dhe iterativ dhe lidhe me pemët e shprehjeve Booleane."
+msgstr "Krahaso faktorialin rekursiv dhe iterativ dhe lidhe me pemët e shprehjeve Booleane."
+
+msgid "Krijon automatikisht kombinimet 0/1 për çdo variabël."
+msgstr "Krijon automatikisht kombinimet 0/1 për çdo variabël."
+
+msgid "Kryefaqja"
+msgstr "Kryefaqja"
+
+msgid "Kthehemi nga rekursioni: factorial("
+msgstr "Kthehemi nga rekursioni: factorial("
+
+msgid "Ky algoritëm numëron kombinime të varura nga i dhe j. Numri total i operacioneve është proporcional me n(n+1)(n+2)/6, prandaj termi dominues është n^3."
+msgstr "Ky algoritëm numëron kombinime të varura nga i dhe j. Numri total i operacioneve është proporcional me n(n+1)(n+2)/6, prandaj termi dominues është n^3."
+
+msgid "Ky modul lidh projektin LogicLab me konceptet kryesore të lëndës Algoritme dhe Programim i Avancuar."
+msgstr "Ky modul lidh projektin LogicLab me konceptet kryesore të lëndës Algoritme dhe Programim i Avancuar."
+
+msgid "Ky modul shton analizë të kompleksitetit, algoritme renditjeje, rekursion, iteracion, Divide and Conquer, Greedy dhe Dynamic Programming."
+msgstr "Ky modul shton analizë të kompleksitetit, algoritme renditjeje, rekursion, iteracion, Divide and Conquer, Greedy dhe Dynamic Programming."
+
+msgid "Ky web është ndërtuar dhe përmirësuar me ndihmën e inteligjencës artificiale si asistencë zhvillimi. AI është përdorur për strukturimin e moduleve, organizimin e kodit, përmirësimin e ndërfaqes, formulimin e shpjegimeve akademike dhe optimizimin e integrimit me Tutor AI. Vendimmarrja, përzgjedhja e funksionaliteteve dhe përshtatja me qëllimin e projektit mbeten pjesë e punës zhvilluese dhe akademike të projektit."
+msgstr "Ky web është ndërtuar dhe përmirësuar me ndihmën e inteligjencës artificiale si asistencë zhvillimi. AI është përdorur për strukturimin e moduleve, organizimin e kodit, përmirësimin e ndërfaqes, formulimin e shpjegimeve akademike dhe optimizimin e integrimit me Tutor AI. Vendimmarrja, përzgjedhja e funksionaliteteve dhe përshtatja me qëllimin e projektit mbeten pjesë e punës zhvilluese dhe akademike të projektit."
+
+msgid "Ky është kufizimi kryesor pse LogicLab e mban tabelën të lexueshme për numër të kufizuar variablash."
+msgstr "Ky është kufizimi kryesor pse LogicLab e mban tabelën të lexueshme për numër të kufizuar variablash."
+
+msgid "Kërkim efikas mbi listë të renditur."
+msgstr "Kërkim efikas mbi listë të renditur."
+
+msgid "Kërkimi O(n), insertimi në fillim O(1)."
+msgstr "Kërkimi O(n), insertimi në fillim O(1)."
+
+msgid "Kërkimi i vlerës 7 në listën [1, 3, 5, 7, 9]."
+msgstr "Kërkimi i vlerës 7 në listën [1, 3, 5, 7, 9]."
+
+msgid "Laboratori i Algoritmeve"
+msgstr "Laboratori i Algoritmeve"
+
+msgid "Language"
+msgstr "Gjuha"
+
+msgid "Lidhja me LogicLab"
+msgstr "Lidhja me LogicLab"
+
+msgid "Lidhja me LogicLab:"
+msgstr "Lidhja me LogicLab:"
+
+msgid "Lidhja me pemën e shprehjes Booleane në LogicLab"
+msgstr "Lidhja me pemën e shprehjes Booleane në LogicLab"
+
+msgid "Linked List është fleksibël për insertime dhe fshirje, por nuk ofron akses direkt si array."
+msgstr "Linked List është fleksibël për insertime dhe fshirje, por nuk ofron akses direkt si array."
+
+msgid "Lista duhet të përmbajë të paktën një numër."
+msgstr "Lista duhet të përmbajë të paktën një numër."
+
+msgid "Lista duhet të përmbajë vetëm numra të ndarë me presje."
+msgstr "Lista duhet të përmbajë vetëm numra të ndarë me presje."
+
+msgid "Lista e numrave"
+msgstr "Lista e numrave"
+
+msgid "Lista fillestare:"
+msgstr "Lista fillestare:"
+
+msgid "Lista finale:"
+msgstr "Lista finale:"
+
+msgid "Lista ka një element dhe është tashmë e renditur."
+msgstr "Lista ka një element dhe është tashmë e renditur."
+
+msgid "Lista të vogla ose pothuajse të renditura"
+msgstr "Lista të vogla ose pothuajse të renditura"
+
+msgid "Llogarit"
+msgstr "Llogarit"
+
+msgid "LogicLab nuk është vetëm një analizues shprehjesh Booleane. Projekti demonstron se si konceptet teorike nga matematika, logjika, algoritmet, programimi web dhe inteligjenca artificiale mund të lidhen në një aplikacion real me strukturë modulare, ndërfaqe të qartë dhe funksionalitet të testueshëm."
+msgstr "LogicLab nuk është vetëm një analizues shprehjesh Booleane. Projekti demonstron se si konceptet teorike nga matematika, logjika, algoritmet, programimi web dhe inteligjenca artificiale mund të lidhen në një aplikacion real me strukturë modulare, ndërfaqe të qartë dhe funksionalitet të testueshëm."
+
+msgid "LogicLab | Projekt universitar për qarqe digjitale dhe logjikë Booleane"
+msgstr "LogicLab | Projekt universitar për qarqe digjitale dhe logjikë Booleane"
+
+msgid "Logjika Digjitale"
+msgstr "Logjika Digjitale"
+
+msgid "Logjika Digjitale e kthen shprehjen në porta dhe qark kombinacional."
+msgstr "Logjika Digjitale e kthen shprehjen në porta dhe qark kombinacional."
+
+msgid "Maksimumi i lejuar është 6 variabla që tabela të mbetet e lexueshme."
+msgstr "Maksimumi i lejuar është 6 variabla që tabela të mbetet e lexueshme."
+
+msgid "Matematika Diskrete"
+msgstr "Matematika Diskrete"
+
+msgid "Matematika Diskrete e përkthen problemin në shprehje Booleane."
+msgstr "Matematika Diskrete e përkthen problemin në shprehje Booleane."
+
+msgid "Memoization në LogicLab"
+msgstr "Memoization në LogicLab"
+
+msgid "Memoization shmang përsëritjen kur e njëjta nënshprehje shfaqet disa herë."
+msgstr "Memoization shmang përsëritjen kur e njëjta nënshprehje shfaqet disa herë."
+
+msgid "Merge Sort ka performancë të qëndrueshme sepse ndarja dhe bashkimi ruajnë kompleksitetin O(n log n)."
+msgstr "Merge Sort ka performancë të qëndrueshme sepse ndarja dhe bashkimi ruajnë kompleksitetin O(n log n)."
+
+msgid "Merge Sort ndan listën në dy pjesë dhe i bashkon të renditura."
+msgstr "Merge Sort ndan listën në dy pjesë dhe i bashkon të renditura."
+
+msgid "Modelimi"
+msgstr "Modelimi"
+
+msgid "Module"
+msgstr "Module"
+
+msgid "Mund të ulë kompleksitetin nga eksponencial në polinomial ose linear."
+msgstr "Mund të ulë kompleksitetin nga eksponencial në polinomial ose linear."
+
+msgid "Ndahet lista në "
+msgstr "Ndahet lista në "
+
+msgid "Ndarje e problemit në nënprobleme më të vogla."
+msgstr "Ndarje e problemit në nënprobleme më të vogla."
+
+msgid "Ndihma Inteligjente"
+msgstr "Ndihma Inteligjente"
+
+msgid "Ndërrojmë minimumin "
+msgstr "Ndërrojmë minimumin "
+
+msgid "Nga Matematika Diskrete te Qarqet Digjitale"
+msgstr "Nga Matematika Diskrete te Qarqet Digjitale"
+
+msgid "Nga O(n) në rast të mirë për Insertion deri në O(n log n) për Merge Sort."
+msgstr "Nga O(n) në rast të mirë për Insertion deri në O(n log n) për Merge Sort."
+
+msgid "Ngarko"
+msgstr "Ngarko"
+
+msgid "Ngarko figurën direkt te Tutor AI dhe merr shpjegim të qarkut."
+msgstr "Ngarko figurën direkt te Tutor AI dhe merr shpjegim të qarkut."
+
+msgid "Ngarko imazh qarku dhe kërko analizë."
+msgstr "Ngarko imazh qarku dhe kërko analizë."
+
+msgid "Ngarko një imazh qarku për analizë bazë."
+msgstr "Ngarko një imazh qarku për analizë bazë."
+
+msgid "Një cikël i vetëm mbi n elemente ka Θ(n). Dy cikle të folezuara zakonisht japin Θ(n^2)."
+msgstr "Një cikël i vetëm mbi n elemente ka Θ(n). Dy cikle të folezuara zakonisht japin Θ(n^2)."
+
+msgid "Një mjedis praktik për të parë si konceptet diskrete shndërrohen në porta logjike."
+msgstr "Një mjedis praktik për të parë si konceptet diskrete shndërrohen në porta logjike."
+
+msgid "Një platformë akademike që bashkon pesë lëndë universitare në një mjedis praktik analize, simulimi dhe interpretimi."
+msgstr "Një platformë akademike që bashkon pesë lëndë universitare në një mjedis praktik analize, simulimi dhe interpretimi."
+
+msgid "Një shprehje Booleane mund të ndahet në nënshprehje që analizohen veçmas."
+msgstr "Një shprehje Booleane mund të ndahet në nënshprehje që analizohen veçmas."
+
+msgid "Normalizuar:"
+msgstr "Normalizuar:"
+
+msgid "Notacionet kryesore për matjen e rritjes së algoritmeve."
+msgstr "Notacionet kryesore për matjen e rritjes së algoritmeve."
+
+msgid "Nuk u arrit të gjenerohen format kanonike SOP/POS."
+msgstr "Nuk u arrit të gjenerohen format kanonike SOP/POS."
+
+msgid "Numri i Portave"
+msgstr "Numri i Portave"
+
+msgid "Numri i iterimeve:"
+msgstr "Numri i iterimeve:"
+
+msgid "Numri i kombinimeve"
+msgstr "Numri i kombinimeve"
+
+msgid "Numri i thirrjeve:"
+msgstr "Numri i thirrjeve:"
+
+msgid "Numri i variablave"
+msgstr "Numri i variablave"
+
+msgid "Numëron portat dhe gjeneron hapa të lexueshëm qarku."
+msgstr "Numëron portat dhe gjeneron hapa të lexueshëm qarku."
+
+msgid "Në LogicLab, shprehjet Booleane mund të përfaqësohen si pemë. Për të gjeneruar hapat e qarkut, sistemi mund ta përshkojë këtë pemë në mënyrë rekursive."
+msgstr "Në LogicLab, shprehjet Booleane mund të përfaqësohen si pemë. Për të gjeneruar hapat e qarkut, sistemi mund ta përshkojë këtë pemë në mënyrë rekursive."
+
+msgid "Në LogicLab:"
+msgstr "Në LogicLab:"
+
+msgid "Në thjeshtim, një heuristikë greedy mund të zgjedhë transformimin që ul më shumë numrin e portave."
+msgstr "Në thjeshtim, një heuristikë greedy mund të zgjedhë transformimin që ul më shumë numrin e portave."
+
+msgid "Në çdo hap përgjysmohet hapësira e kërkimit."
+msgstr "Në çdo hap përgjysmohet hapësira e kërkimit."
+
+msgid "Nëse (A & B) shfaqet disa herë, rezultati i saj mund të ruhet për një kombinim të caktuar."
+msgstr "Nëse (A & B) shfaqet disa herë, rezultati i saj mund të ruhet për një kombinim të caktuar."
+
+msgid "Ofron analizë algoritmike të qartë për kompleksitetin e proceseve të LogicLab."
+msgstr "Ofron analizë algoritmike të qartë për kompleksitetin e proceseve të LogicLab."
+
+msgid "Ollama is not reachable right now, so this is a demo response. The image was accepted by the system. With a vision-capable Ollama model, this module can identify inputs, gates, outputs, and propose a possible Boolean function for the circuit."
+msgstr "Ollama nuk është i disponueshëm, ndaj kjo është përgjigje demonstrimi. Sistemi pranoi imazhin, por nuk e analizoi. Me një model vizual Ollama, moduli mund të analizojë hyrjet, portat dhe daljet dhe të propozojë një funksion Boolean të mundshëm."
+
+msgid "Ollama ktheu përgjigje bosh."
+msgstr "Ollama ktheu përgjigje bosh."
+
+msgid "Origjinale:"
+msgstr "Origjinale:"
+
+msgid "P.sh. Qark me porta AND/OR"
+msgstr "P.sh. Qark me porta AND/OR"
+
+msgid "Pak ndërrime, por shumë krahasime"
+msgstr "Pak ndërrime, por shumë krahasime"
+
+msgid "Paraqitje konceptuale e mënyrës si shprehja ndërtohet nga hyrjet deri te dalja finale F."
+msgstr "Paraqitje konceptuale e mënyrës si shprehja ndërtohet nga hyrjet deri te dalja finale F."
+
+msgid "Performancë e qëndrueshme"
+msgstr "Performancë e qëndrueshme"
+
+msgid "Pivot "
+msgstr "Pivot "
+
+msgid "Pjesa e parë ka kompleksitet Θ(n^2), ndërsa pjesa e dytë ka kompleksitet Θ(n). Në analizën asimptotike ruhet termi dominues, prandaj kompleksiteti total është Θ(n^2)."
+msgstr "Pjesa e parë ka kompleksitet Θ(n^2), ndërsa pjesa e dytë ka kompleksitet Θ(n). Në analizën asimptotike ruhet termi dominues, prandaj kompleksiteti total është Θ(n^2)."
+
+msgid "Platformë edukative për lidhjen e Matematikës Diskrete me Logjikën Digjitale."
+msgstr "Platformë edukative për lidhjen e Matematikës Diskrete me Logjikën Digjitale."
+
+msgid "Platformë edukative universitare"
+msgstr "Platformë edukative universitare"
+
+msgid "Portat"
+msgstr "Portat"
+
+msgid "Portat e përdorura"
+msgstr "Portat e përdorura"
+
+msgid "Portë AND që bashkon "
+msgstr "Portë AND që bashkon "
+
+msgid "Portë NOT mbi "
+msgstr "Portë NOT mbi "
+
+msgid "Portë OR që bashkon "
+msgstr "Portë OR që bashkon "
+
+msgid "Portë XOR që bashkon "
+msgstr "Portë XOR që bashkon "
+
+msgid "Portë dalëse për rezultatin final F"
+msgstr "Portë dalëse për rezultatin final F"
+
+msgid "Pozicioni "
+msgstr "Pozicioni "
+
+msgid "Problemi ndahet, zgjidhen pjesët dhe më pas bashkohen rezultatet."
+msgstr "Problemi ndahet, zgjidhen pjesët dhe më pas bashkohen rezultatet."
+
+msgid "Programim në Web me Django"
+msgstr "Programim në Web me Django"
+
+msgid "Projekt ndërdisiplinor"
+msgstr "Projekt ndërdisiplinor"
+
+msgid "Projekti përdor arkitekturë Django me ndarje të qartë midis views, templates, URL-ve, engine files dhe modeleve të databazës."
+msgstr "Projekti përdor arkitekturë Django me ndarje të qartë midis views, templates, URL-ve, engine files dhe modeleve të databazës."
+
+msgid "Pse tabela e së vërtetës ka O(2^n)?"
+msgstr "Pse tabela e së vërtetës ka O(2^n)?"
+
+msgid "Pyet Tutor AI"
+msgstr "Pyet Tutor AI"
+
+msgid "Pyetja"
+msgstr "Pyetja"
+
+msgid "Për Big O, Big Θ dhe Big Ω."
+msgstr "Për Big O, Big Θ dhe Big Ω."
+
+msgid "Për Divide and Conquer, Greedy, Dynamic Programming dhe Linked List."
+msgstr "Për Divide and Conquer, Greedy, Dynamic Programming dhe Linked List."
+
+msgid "Për Insertion Sort, Selection Sort, Quick Sort dhe Merge Sort."
+msgstr "Për Insertion Sort, Selection Sort, Quick Sort dhe Merge Sort."
+
+msgid "Për krahasimin e algoritmeve rekursive dhe iterative."
+msgstr "Për krahasimin e algoritmeve rekursive dhe iterative."
+
+msgid "Për n variabla ekzistojnë 2^n kombinime të mundshme 0/1. Prandaj gjenerimi i tabelës së së vërtetës ka rritje eksponenciale."
+msgstr "Për n variabla ekzistojnë 2^n kombinime të mundshme 0/1. Prandaj gjenerimi i tabelës së së vërtetës ka rritje eksponenciale."
+
+msgid "Për çdo variabël shtohet një ndarje e re midis 0 dhe 1. Për këtë arsye, me n variabla kemi 2^n kombinime të mundshme."
+msgstr "Për çdo variabël shtohet një ndarje e re midis 0 dhe 1. Për këtë arsye, me n variabla kemi 2^n kombinime të mundshme."
+
+msgid "Përdor &, |, ~, ^ ose AND, OR, NOT, XOR. Maksimumi 6 variabla."
+msgstr "Përdor &, |, ~, ^ ose AND, OR, NOT, XOR. Maksimumi 6 variabla."
+
+msgid "Përdor SymPy për forma më të shkurtra dhe më efikase."
+msgstr "Përdor SymPy për forma më të shkurtra dhe më efikase."
+
+msgid "Përdor arkitekturë modulare ku logjika e biznesit ndahet nga ndërfaqja dhe routing."
+msgstr "Përdor arkitekturë modulare ku logjika e biznesit ndahet nga ndërfaqja dhe routing."
+
+msgid "Përdor maksimumi 12 numra që hapat të mbeten të lexueshëm."
+msgstr "Përdor maksimumi 12 numra që hapat të mbeten të lexueshëm."
+
+msgid "Përdor modelin lokal"
+msgstr "Përdor modelin lokal"
+
+msgid "Përdor një numër të plotë nga 1 deri në 10."
+msgstr "Përdor një numër të plotë nga 1 deri në 10."
+
+msgid "Përdoret kur problemi ka nënprobleme të mbivendosura dhe strukturë optimale."
+msgstr "Përdoret kur problemi ka nënprobleme të mbivendosura dhe strukturë optimale."
+
+msgid "Përdorimi"
+msgstr "Përdorimi"
+
+msgid "Përfshin AI lokale për tutorim dhe analizë imazhesh, pa kërkuar API key të jashtëm."
+msgstr "Përfshin AI lokale për tutorim dhe analizë imazhesh, pa kërkuar API key të jashtëm."
+
+msgid "Përkufizim:"
+msgstr "Përkufizim:"
+
+msgid "Përmbledhje"
+msgstr "Përmbledhje"
+
+msgid "Përshëndetje. Mund të më pyesësh për truth tables, Boolean simplification, logic circuits, Big O, sorting, recursion ose të ngarkosh një imazh qarku për analizë. Tutor AI përgjigjet në gjuhën e zgjedhur."
+msgstr "Përshëndetje. Mund të më pyesësh për truth tables, Boolean simplification, logic circuits, Big O, sorting, recursion ose të ngarkosh një imazh qarku për analizë. Tutor AI përgjigjet në gjuhën e zgjedhur."
+
+msgid "Quick Sort përdor pivot, Merge Sort përdor bashkim të renditur."
+msgstr "Quick Sort përdor pivot, Merge Sort përdor bashkim të renditur."
+
+msgid "Quick Sort është algoritëm rekursiv divide and conquer; rasti më i keq ndodh kur ndarjet janë shumë të pabalancuara."
+msgstr "Quick Sort është algoritëm rekursiv divide and conquer; rasti më i keq ndodh kur ndarjet janë shumë të pabalancuara."
+
+msgid "Qëllimi akademik i projektit"
+msgstr "Qëllimi akademik i projektit"
+
+msgid "Rasti bazë: factorial(1) = 1"
+msgstr "Rasti bazë: factorial(1) = 1"
+
+msgid "Recursion solves a problem by calling itself on smaller inputs. Time often depends on the number of calls, while space includes the recursion stack."
+msgstr "Rekursioni zgjidh një problem duke thirrur veten me hyrje më të vogla. Koha shpesh varet nga numri i thirrjeve, ndërsa hapësira përfshin stack-un e rekursionit."
+
+msgid "Rekursion dhe Iteracion"
+msgstr "Rekursion dhe Iteracion"
+
+msgid "Renditja ndihmon në organizimin e mintermave, maxtermave dhe rezultateve të analizës."
+msgstr "Renditja ndihmon në organizimin e mintermave, maxtermave dhe rezultateve të analizës."
+
+msgid "Rezultati"
+msgstr "Rezultati"
+
+msgid "Rezultati i Analizës"
+msgstr "Rezultati i Analizës"
+
+msgid "Rezultati:"
+msgstr "Rezultati:"
+
+msgid "Roli i Inteligjencës Artificiale në zhvillim"
+msgstr "Roli i Inteligjencës Artificiale në zhvillim"
+
+msgid "Rreth LogicLab"
+msgstr "Rreth LogicLab"
+
+msgid "Rreth Projektit"
+msgstr "Rreth Projektit"
+
+msgid "Rritja kubike bëhet shpejt e kushtueshme kur n rritet."
+msgstr "Rritja kubike bëhet shpejt e kushtueshme kur n rritet."
+
+msgid "Rrjedha logjike"
+msgstr "Rrjedha logjike"
+
+msgid "Ruajtja e rezultateve të llogaritura më parë."
+msgstr "Ruajtja e rezultateve të llogaritura më parë."
+
+msgid "Ruajtje e nënrezultateve për të shmangur përsëritjen."
+msgstr "Ruajtje e nënrezultateve për të shmangur përsëritjen."
+
+msgid "Selection Sort bën pak ndërrime, por gjithmonë kërkon minimumin në pjesën e parenditur."
+msgstr "Selection Sort bën pak ndërrime, por gjithmonë kërkon minimumin në pjesën e parenditur."
+
+msgid "Shembuj pyetjesh"
+msgstr "Shembuj pyetjesh"
+
+msgid "Shembuj të vlefshëm"
+msgstr "Shembuj të vlefshëm"
+
+msgid "Shembull:"
+msgstr "Shembull:"
+
+msgid "Shifts"
+msgstr "Zhvendosje"
+
+msgid "Shkruaj një shprehje Booleane për analizim."
+msgstr "Shkruaj një shprehje Booleane për analizim."
+
+msgid "Shkruaj një shprehje dhe gjenero analizën, tabelën e së vërtetës dhe qarkun logjik."
+msgstr "Shkruaj një shprehje dhe gjenero analizën, tabelën e së vërtetës dhe qarkun logjik."
+
+msgid "Shkruaj pyetje për logjikë, algoritme, Big O, pseudokod ose kërko analizë për imazhin e qarkut..."
+msgstr "Shkruaj pyetje për logjikë, algoritme, Big O, pseudokod ose kërko analizë për imazhin e qarkut..."
+
+msgid "Shkruaj pyetje teorike për logjikën Booleane ose algoritmet."
+msgstr "Shkruaj pyetje teorike për logjikën Booleane ose algoritmet."
+
+msgid "Shkruaj të paktën një numër për renditje."
+msgstr "Shkruaj të paktën një numër për renditje."
+
+msgid "Shpesh O(n log n), në varësi të ndarjes dhe bashkimit."
+msgstr "Shpesh O(n log n), në varësi të ndarjes dhe bashkimit."
+
+msgid "Shpesh dominohet nga renditja: O(n log n)."
+msgstr "Shpesh dominohet nga renditja: O(n log n)."
+
+msgid "Shpjegim:"
+msgstr "Shpjegim:"
+
+msgid "Shpjego rekursionin te faktoriali."
+msgstr "Shpjego rekursionin te faktoriali."
+
+msgid "Shprehja Booleane"
+msgstr "Shprehja Booleane"
+
+msgid "Shprehja duhet të përmbajë të paktën një variabël."
+msgstr "Shprehja duhet të përmbajë të paktën një variabël."
+
+msgid "Shprehja e thjeshtuar"
+msgstr "Shprehja e thjeshtuar"
+
+msgid "Shprehja kthehet në tabelë të së vërtetës, formë të thjeshtuar dhe hapa qarku."
+msgstr "Shprehja kthehet në tabelë të së vërtetës, formë të thjeshtuar dhe hapa qarku."
+
+msgid "Shprehja nuk mund të thjeshtohet për shkak të sintaksës së pavlefshme."
+msgstr "Shprehja nuk mund të thjeshtohet për shkak të sintaksës së pavlefshme."
+
+msgid "Shprehja origjinale"
+msgstr "Shprehja origjinale"
+
+msgid "Shënim efikasiteti:"
+msgstr "Shënim efikasiteti:"
+
+msgid "Si ndërthuren lëndët në një rrjedhë të vetme"
+msgstr "Si ndërthuren lëndët në një rrjedhë të vetme"
+
+msgid "Si përdoret"
+msgstr "Si përdoret"
+
+msgid "Sintaksa e shprehjes nuk është e vlefshme. Kontrollo operatorët dhe kllapat."
+msgstr "Sintaksa e shprehjes nuk është e vlefshme. Kontrollo operatorët dhe kllapat."
+
+msgid "Sorting algorithms are compared by best, average, and worst cases. Merge Sort is O(n log n) in all cases, while Quick Sort is O(n log n) on average but O(n^2) in the worst case."
+msgstr "Algoritmet e renditjes krahasohen sipas rastit më të mirë, mesatar dhe më të keq. Merge Sort ka O(n log n) në të gjitha rastet; Quick Sort ka O(n log n) mesatarisht dhe O(n^2) në rastin më të keq."
+
+msgid "Struktura e Qarkut"
+msgstr "Struktura e Qarkut"
+
+msgid "Strukturë lineare ku çdo nyje ruan vlerën dhe lidhjen me nyjen tjetër."
+msgstr "Strukturë lineare ku çdo nyje ruan vlerën dhe lidhjen me nyjen tjetër."
+
+msgid "Swaps"
+msgstr "Ndërrime"
+
+msgid "Tabela e së Vërtetës"
+msgstr "Tabela e së Vërtetës"
+
+msgid "Tabela e së vërtetës"
+msgstr "Tabela e së vërtetës"
+
+msgid "Tabela e së vërtetës në LogicLab ka O(2^n), sepse çdo variabël dyfishon kombinimet."
+msgstr "Tabela e së vërtetës në LogicLab ka O(2^n), sepse çdo variabël dyfishon kombinimet."
+
+msgid "Tabelë Krahasimi e Algoritmeve"
+msgstr "Tabelë Krahasimi e Algoritmeve"
+
+msgid "Tautologji"
+msgstr "Tautologji"
+
+msgid "Teknologjitë"
+msgstr "Teknologjitë"
+
+msgid "Teori Algoritmike"
+msgstr "Teori Algoritmike"
+
+msgid "Thirrje rekursive: factorial("
+msgstr "Thirrje rekursive: factorial("
+
+msgid "This is the Tutor AI demo fallback. For professional analysis, start Ollama and ask about Boolean logic, digital circuits, or algorithm analysis."
+msgstr "Kjo është një përgjigje demonstrimi e Tutor AI. Për analizë me modelin AI, nis Ollama dhe pyet për logjikë Booleane, qarqe digjitale ose analizë algoritmesh."
+
+msgid "Thjeshtim Boolean"
+msgstr "Thjeshtim Boolean"
+
+msgid "Thjeshtimi"
+msgstr "Thjeshtimi"
+
+msgid "Tipi"
+msgstr "Tipi"
+
+msgid "Tipi:"
+msgstr "Tipi:"
+
+msgid "Titulli"
+msgstr "Titulli"
+
+msgid "Truth Table Generator në LogicLab"
+msgstr "Truth Table Generator në LogicLab"
+
+msgid "Truth-table generation has time complexity O(2^n), because n Boolean variables produce 2^n possible 0/1 combinations."
+msgstr "Gjenerimi i tabelës së së vërtetës ka kompleksitet kohor O(2^n), sepse n variabla Booleane japin 2^n kombinime të mundshme 0/1."
+
+msgid "Tutor AI"
+msgstr "Tutor AI"
+
+msgid "Tutor AI përdor model lokal me Ollama për të shpjeguar koncepte, për të ndihmuar në interpretimin e pyetjeve dhe për të analizuar imazhe qarqesh logjike."
+msgstr "Tutor AI përdor model lokal me Ollama për të shpjeguar koncepte, për të ndihmuar në interpretimin e pyetjeve dhe për të analizuar imazhe qarqesh logjike."
+
+msgid "Ul numrin praktik të vlerësimeve, edhe kur tabela mbetet O(2^n)."
+msgstr "Ul numrin praktik të vlerësimeve, edhe kur tabela mbetet O(2^n)."
+
+msgid "Upload Imazhi"
+msgstr "Upload Imazhi"
+
+msgid "Varet nga struktura e algoritmit."
+msgstr "Varet nga struktura e algoritmit."
+
+msgid "Variablat:"
+msgstr "Variablat:"
+
+msgid "Vendos pseudokod dhe kërko analizë kompleksiteti."
+msgstr "Vendos pseudokod dhe kërko analizë kompleksiteti."
+
+msgid "Vendosim "
+msgstr "Vendosim "
+
+msgid "Vendosim elementin "
+msgstr "Vendosim elementin "
+
+msgid "Versioni iterativ përdor një variabël akumuluese, prandaj hapësira mbetet konstante."
+msgstr "Versioni iterativ përdor një variabël akumuluese, prandaj hapësira mbetet konstante."
+
+msgid "Versioni rekursiv përdor stack thirrjesh, prandaj kërkon hapësirë O(n)."
+msgstr "Versioni rekursiv përdor stack thirrjesh, prandaj kërkon hapësirë O(n)."
+
+msgid "Visualizer i Renditjes"
+msgstr "Visualizer i Renditjes"
+
+msgid "Vlera e n"
+msgstr "Vlera e n"
+
+msgid "Vlera profesionale e projektit"
+msgstr "Vlera profesionale e projektit"
+
+msgid "Vlerësimi i nënshprehjeve të përsëritura mund të ruhet për të shmangur llogaritje të panevojshme."
+msgstr "Vlerësimi i nënshprehjeve të përsëritura mund të ruhet për të shmangur llogaritje të panevojshme."
+
+msgid "Worst"
+msgstr "Më i keqi"
+
+msgid "Worst:"
+msgstr "Më i keqi:"
+
+msgid "Zgjedh algoritmin për analizë"
+msgstr "Zgjedh algoritmin për analizë"
+
+msgid "Zgjedhim elementin "
+msgstr "Zgjedhim elementin "
+
+msgid "Zgjedhim pivotin "
+msgstr "Zgjedhim pivotin "
+
+msgid "Zgjedhja e intervaleve që mbarojnë më herët në problemin activity selection."
+msgstr "Zgjedhja e intervaleve që mbarojnë më herët në problemin activity selection."
+
+msgid "Zgjedhja më e mirë lokale në çdo hap."
+msgstr "Zgjedhja më e mirë lokale në çdo hap."
+
+msgid "Zhvendosim "
+msgstr "Zhvendosim "
+
+msgid "faqet janë ndërtuar me Bootstrap, routing të organizuar, formularë Django dhe ruajtje të historikut në SQLite."
+msgstr "faqet janë ndërtuar me Bootstrap, routing të organizuar, formularë Django dhe ruajtje të historikut në SQLite."
+
+msgid "kombinime të mundshme."
+msgstr "kombinime të mundshme."
+
+msgid "modeli është i kufizuar në temat e projektit dhe punon lokalisht për të ulur varësinë nga shërbime të jashtme."
+msgstr "modeli është i kufizuar në temat e projektit dhe punon lokalisht për të ulur varësinë nga shërbime të jashtme."
+
+msgid "për përgjigje në anglisht me më pak resurse."
+msgstr "për përgjigje në anglisht me më pak resurse."
+
+msgid "përdoruesi shkruan një shprehje dhe sistemi e kthen në strukturë të analizueshme matematikisht."
+msgstr "përdoruesi shkruan një shprehje dhe sistemi e kthen në strukturë të analizueshme matematikisht."
+
+msgid "shprehja shoqërohet me numërim portash, hapa qarku dhe burim DOT për paraqitje grafike."
+msgstr "shprehja shoqërohet me numërim portash, hapa qarku dhe burim DOT për paraqitje grafike."
+
+msgid "tabela e së vërtetës lidhet me kompleksitetin O(2^n), ndërsa Algorithm Lab shpjegon Big O, Big Θ dhe Big Ω."
+msgstr "tabela e së vërtetës lidhet me kompleksitetin O(2^n), ndërsa Algorithm Lab shpjegon Big O, Big Θ dhe Big Ω."
+
+msgid "Është i zgjerueshëm për module të reja, renderim grafik, eksportim raportesh dhe llogari përdoruesish."
+msgstr "Është i zgjerueshëm për module të reja, renderim grafik, eksportim raportesh dhe llogari përdoruesish."
+

@@ -1,0 +1,83 @@
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}LogicLab{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="{% url 'home' %}">
+            <i class="bi bi-cpu-fill text-info"></i> LogicLab
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">{% translate "Kryefaqja" %}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'analyzer' %}">{% translate "Analizuesi" %}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'algorithms_dashboard' %}">{% translate "Laboratori i Algoritmeve" %}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'history' %}">{% translate "Historiku" %}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'chatbot' %}">{% translate "Tutor AI" %}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">{% translate "Rreth Projektit" %}</a></li>
+                <li class="nav-item ms-lg-3">
+                    <form action="{% url 'set_language' %}" method="post" class="d-flex gap-1" aria-label="{% translate 'Language' %}">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                        <button type="submit" name="language" value="sq" class="btn btn-sm {% if LANGUAGE_CODE == 'sq' %}btn-info{% else %}btn-outline-light{% endif %}" aria-pressed="{% if LANGUAGE_CODE == 'sq' %}true{% else %}false{% endif %}" lang="sq">SQ</button>
+                        <button type="submit" name="language" value="en" class="btn btn-sm {% if LANGUAGE_CODE == 'en' %}btn-info{% else %}btn-outline-light{% endif %}" aria-pressed="{% if LANGUAGE_CODE == 'en' %}true{% else %}false{% endif %}" lang="en">EN</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="page-content">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-4">
+                <h5 class="fw-bold"><i class="bi bi-cpu-fill text-info me-2"></i>LogicLab</h5>
+                <p class="text-secondary mb-0">{% translate "Platformë edukative për lidhjen e Matematikës Diskrete me Logjikën Digjitale." %}</p>
+            </div>
+            <div class="col-md-4">
+                <h6 class="fw-bold">{% translate "Module" %}</h6>
+                <ul class="list-unstyled text-secondary mb-0">
+                    <li>{% translate "Analizues Boolean" %}</li>
+                    <li>{% translate "Tabela e së vërtetës" %}</li>
+                    <li>{% translate "Gjenerator qarqesh" %}</li>
+                    <li>{% translate "Laboratori i Algoritmeve" %}</li>
+                    <li>{% translate "Tutor AI" %}</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6 class="fw-bold">{% translate "Teknologjitë" %}</h6>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-info">Django</span>
+                    <span class="badge text-bg-light">Bootstrap</span>
+                    <span class="badge text-bg-success">SymPy</span>
+                    <span class="badge text-bg-warning">Graphviz</span>
+                    <span class="badge text-bg-secondary">AI</span>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary my-4">
+        <div class="text-center text-secondary small">{% translate "LogicLab | Projekt universitar për qarqe digjitale dhe logjikë Booleane" %}</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Rekursion dhe Iteracion" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="fw-bold mb-2">{% translate "Rekursion dhe Iteracion" %}</h1>
+        <p class="text-secondary mb-0">{% translate "Krahaso faktorialin rekursiv dhe iterativ dhe lidhe me pemët e shprehjeve Booleane." %}</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="professional-card bg-white p-4 mb-4">
+        <form method="post" class="row g-3 align-items-end">
+            {% csrf_token %}
+            <div class="col-md-8">
+                <label class="form-label fw-semibold" for="n">{% translate "Vlera e n" %}</label>
+                <input class="form-control" type="number" min="1" max="10" id="n" name="n" value="{{ n }}">
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-info w-100" type="submit"><i class="bi bi-calculator me-1"></i> {% translate "Llogarit" %}</button>
+            </div>
+        </form>
+        {% if error %}<div class="alert alert-warning mt-3 mb-0">{{ error }}</div>{% endif %}
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="professional-card bg-white p-4 h-100">
+                <h5 class="fw-bold">{% translate "Faktoriali Rekursiv" %}</h5>
+                <p>{% translate "Rezultati:" %} <strong>{{ recursive.result }}</strong></p>
+                <p>{% translate "Numri i thirrjeve:" %} <strong>{{ recursive.calls_count }}</strong></p>
+                <p>{% translate "Kompleksiteti kohor:" %} <span class="badge text-bg-info">{{ recursive.time_complexity }}</span></p>
+                <p>{% translate "Kompleksiteti hapësinor:" %} <span class="badge text-bg-warning">{{ recursive.space_complexity }}</span></p>
+                <p class="text-secondary">{{ recursive.explanation }}</p>
+                <div class="recursion-trace">
+                    {% for step in recursive.steps %}<div>{{ step }}</div>{% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="professional-card bg-white p-4 h-100">
+                <h5 class="fw-bold">{% translate "Faktoriali Iterativ" %}</h5>
+                <p>{% translate "Rezultati:" %} <strong>{{ iterative.result }}</strong></p>
+                <p>{% translate "Numri i iterimeve:" %} <strong>{{ iterative.iterations_count }}</strong></p>
+                <p>{% translate "Kompleksiteti kohor:" %} <span class="badge text-bg-info">{{ iterative.time_complexity }}</span></p>
+                <p>{% translate "Kompleksiteti hapësinor:" %} <span class="badge text-bg-success">{{ iterative.space_complexity }}</span></p>
+                <p class="text-secondary">{{ iterative.explanation }}</p>
+                <div class="recursion-trace">
+                    {% for step in iterative.steps %}<div>{{ step }}</div>{% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="professional-card bg-white p-4 mt-4">
+        <h5 class="fw-bold">{% translate "Lidhja me pemën e shprehjes Booleane në LogicLab" %}</h5>
+        <p><code>{{ expression_tree.expression }}</code></p>
+        <pre class="pseudocode-box">{{ expression_tree.tree }}</pre>
+        <p class="text-secondary mb-0">{{ expression_tree.explanation }}</p>
+    </div>
+</section>
+{% endblock %}

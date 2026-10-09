@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Analizuesi" %} | LogicLab{% endblock %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="fw-bold mb-2">{% translate "Analizuesi i Shprehjeve Booleane" %}</h1>
+        <p class="text-secondary mb-0">{% translate "Shkruaj një shprehje dhe gjenero analizën, tabelën e së vërtetës dhe qarkun logjik." %}</p>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="professional-card bg-white p-4">
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    <label class="form-label fw-semibold" for="{{ form.expression.id_for_label }}">{{ form.expression.label }}</label>
+                    {{ form.expression }}
+                    {% if form.expression.help_text %}<div class="form-text">{{ form.expression.help_text }}</div>{% endif %}
+                    {% for error in form.expression.errors %}<div class="alert alert-danger mt-3 mb-0">{{ error }}</div>{% endfor %}
+                    <button class="btn btn-info btn-lg mt-4" type="submit"><i class="bi bi-lightning-charge me-1"></i> {% translate "Analizo shprehjen" %}</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="professional-card bg-white p-4">
+                <h5 class="fw-bold">{% translate "Shembuj të vlefshëm" %}</h5>
+                <div class="d-grid gap-2 mt-3">
+                    <code class="code-box-light">(A &amp; B) | (~A &amp; C)</code>
+                    <code class="code-box-light">A AND B</code>
+                    <code class="code-box-light">NOT A OR B</code>
+                    <code class="code-box-light">A ^ B</code>
+                    <code class="code-box-light">(A | B) &amp; ~C</code>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
